@@ -8,6 +8,7 @@ async function bootstrap() {
       'http://localhost:3000',
       'http://localhost:3001',
       'http://localhost:3002',
+      'example.local.com',
     ],
     methods: ['GET', 'POST'],
     credentials: true,
