@@ -9,7 +9,7 @@ export class CryptoService {
 
   getListings(params): Observable<CoinDto> {
     const { currency, page } = params;
-    const url = new URL('https://api.coingecko.com/api/v3/coins/markets');
+    const url = new URL(process.env.API_URL);
     url.searchParams.set('page', page);
     url.searchParams.set('vs_currency', currency);
     url.searchParams.set('order', 'market_cap_desc');
